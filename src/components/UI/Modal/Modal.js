@@ -1,13 +1,18 @@
 import React from 'react';
 import modalCss from './Modal.css';
+import Wrapper from './../../../hoc/Wrapper';
+import Backdrop from '../Backdrop/Backdrop';
 
 const modal = (props) => (
-    <div className={modalCss.Modal}
-        style={{
-            transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
-            opacity: props.show ? '1' : '0'
-        }}>
-        {props.children}
-    </div>
+    <Wrapper>
+        <Backdrop show={props.show} backdropClicked={props.backdropClicked} />
+        <div className={modalCss.Modal}
+            style={{
+                transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
+                opacity: props.show ? '1' : '0'
+            }}>
+            {props.children}
+        </div>
+    </Wrapper>
 );
 export default modal;
