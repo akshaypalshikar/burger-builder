@@ -1,9 +1,9 @@
-import React ,{Component} from 'react';
+import React, { Component } from 'react';
 import burgerIngredientCss from './BurgerIngredient.css';
 import PropTypes from 'prop-types';
 
 class BurgerIngredient extends Component {
-    render(){
+    render() {
         let ingredient = null;
         switch (this.props.type) {
             case ('bread-bottom'):
@@ -27,7 +27,7 @@ class BurgerIngredient extends Component {
             case ('salad'):
                 ingredient = <div className={burgerIngredientCss.Salad}></div>
                 break;
-            default :
+            default:
                 ingredient = null;
         }
         return ingredient;
@@ -35,7 +35,7 @@ class BurgerIngredient extends Component {
 };
 
 BurgerIngredient.propTypes = {
-    type : PropTypes.oneOf(['bread-bottom','bread-top','meat','cheese','bacon','salad']).isRequired
+    type: PropTypes.oneOf(['bread-bottom', 'bread-top', 'meat', 'cheese', 'bacon', 'salad']).isRequired
 }
 
 export default BurgerIngredient;
