@@ -38,6 +38,14 @@ class BurgerBuilder extends Component {
         alert('Continue...!');
     }
 
+    purchasingCancelledStateHandler=()=>{
+        this.setState({purchasing:false});
+    }
+
+    purchasingContinueStateHandler=()=>{
+        alert('Continue...!');
+    }
+
     updatePurchaseState = (ingredients) => {
         const sum = Object.keys(ingredients)
             .map(ingredientKey => {
