@@ -6,7 +6,7 @@ import Toolbar from '../Navigation/Toolbar/Toolbar';
 const layout = (props) => (
     <Wrapper>
         <div>
-            <Toolbar/>
+            <Toolbar />
             SideDrawer,Backdrop</div>
         <main className={layoutCssClasses.Content}>
             {props.children}

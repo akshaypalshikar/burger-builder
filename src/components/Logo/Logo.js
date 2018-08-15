@@ -4,7 +4,7 @@ import logoCss from './Logo.css';
 
 const logo = (props) => (
     <div className={logoCss.Logo}>
-        <img src={burgerLogo} alt='My Burger'/>
+        <img src={burgerLogo} alt='My Burger' />
     </div>
 );
 export default logo;
