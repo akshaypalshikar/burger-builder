@@ -2,12 +2,14 @@ import React from 'react';
 import Wrapper from './../../hoc/Wrapper';
 import layoutCssClasses from './Layout.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
+import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 
 const layout = (props) => (
     <Wrapper>
         <div>
             <Toolbar />
-            SideDrawer,Backdrop</div>
+            <SideDrawer />
+            Backdrop</div>
         <main className={layoutCssClasses.Content}>
             {props.children}
         </main>
