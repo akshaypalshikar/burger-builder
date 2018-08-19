@@ -1,5 +1,5 @@
-import React from 'react';
-import Wrapper from '../../../hoc/Wrapper';
+import React, { Component } from 'react';
+import Wrapper from '../../../hoc/Wrapper/Wrapper';
 import Button from './../../UI/Button/Button';
 
 const orderSummary = (props) => {
@@ -21,6 +21,6 @@ const orderSummary = (props) => {
             <Button buttonType='Success' clicked={props.buttonContinueClicked} >CONTINUE</Button>
         </Wrapper>
     );
-};
+}
 
-export default orderSummary;
+export default OrderSummary;
